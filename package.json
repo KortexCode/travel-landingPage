@@ -1,0 +1,25 @@
+{
+  "name": "travel-landingpage",
+  "version": "1.0.0",
+  "description": "A responsive website made with tailwind to consult places of travel. Made with the guide of the platzi workshop course.",
+  "main": "index.js",
+  "scripts": {
+    "tw:build": "tailwind -i ./src/css/tailwind.css -o ./public/css/tailwind.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maeno323/travel-landingPage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maeno323/travel-landingPage/issues"
+  },
+  "homepage": "https://github.com/Maeno323/travel-landingPage#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.12",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8"
+  }
+}
