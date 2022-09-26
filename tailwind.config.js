@@ -2,15 +2,21 @@
 module.exports = {
   content: ["./public/index.html", "./src/**/*.{html,js}"],
   theme: {
-    colors:{
+    backgroundColor: theme => ({
+      ...theme("colors"),
       'primary':"#CC2D4A",
       'secondary':"#8FA206",
-      'tertiary':"#61AEC9",
-    },
-    textColor:{
-      'primary':"#CC2D4A",
-      'secondary':"#8FA206",
-      'tertiary':"#61AEC9",
+      'terciary':"#61AEC9",
+      'white':"#ffffff",
+    }),
+    textColor: theme => ({
+			...theme('colors'),
+			primary: '#CC2D4A',
+			secondary: '#8FA206',
+			terciary: '#61AEC9',
+		}),
+    fontFamily : {
+      Montserrat : ["Montserrat", "sans-serif"]
     },
     extend: {
       backgroundImage : {
@@ -30,6 +36,9 @@ module.exports = {
 			  'europe': "url(./public/assets/img/europe.jpg')",
 			  'iceland': "url(./public/assets/img/iceland.jpg')",
       },
+      boxShadow:{
+        shadowButton:"0px 2px 7px rgba(0 0 0 / 0.25)",
+      }
     },
   },
   plugins: [],
