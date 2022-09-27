@@ -2,8 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.recomended__card-container {
+  @apply w-48 h-64 rounded-lg shadow-cardShadow flex-none transform transition-all hover:-translate-y-4 snap-center;
+}
+
 @layer components {
-    .recomended_card-container {
-      @apply w-48 h-64 rounded-lg shadow-cardShadow;
-    }
+    
 }

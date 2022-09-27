@@ -15,41 +15,67 @@
 
     <title>Platzi Travel</title>
 </head>
-<body>
+<body class="font-Montserrat">
     <header>
         <nav>
 
         </nav>
     </header>
     <main class="w-full h-auto"> 
-        <div id="tab_bar">
-
-        </div>
-        <section class="w-full h-auto">
-            <div class="w-full h-3/4 relative" id="home">
-                <div class="w-full h-full py-4 absolute flex flex-col justify-between">
-                    <!--space-y:384px-->
-                    <input class="p-2 rounded-full self-center outline-none shadow-shadowButton text-center" type="search" name="search" placeholder="San Francisco" id="home_search">
-                    <a class="py-2 px-7 rounded-full  self-center shadow-shadowButton text-primary bg-white font-semibold" href="#">Explorer more</a>
-                </div>
-                <div class="w-full h-full">
-                    <img class="w-full h-full" src="./img/sanFrancisco.jpg" alt="San Francisco">
-                </div>
+        <div id="tab_bar"></div>
+        <section id="home" class="w-full h-3/5 relative">  
+            <div class="w-full h-full pb-12 pt-4 absolute flex flex-col justify-between">
+                <!--space-y:384px-->
+                <input class="p-2 rounded-full self-center outline-none shadow-shadowButton text-center transition-all duration-300 focus-within:shadow-shadowButton focus:ring-primary focus:ring-2 focus:w-11/12" type="search" name="search" placeholder="San Francisco" id="home_search">
+                <a class="py-3 px-7 rounded-full  self-center shadow-shadowButton text-primary bg-white font-semibold transition-all duration-500 ease-in-out hover:bg-primary hover:text-white hover:scale-110 hover:translate-y-1" href="#">Explorer more</a>
             </div>
-            <section id="recomended" class="p-20">
-                <div class="recomended_card-container">
+            <div class="w-full h-full">
+                <img class="w-full h-full" src="./img/sanFrancisco.jpg" alt="San Francisco">
+            </div>           
+        </section>
+        <section id="recomended" class="p-6">
+            <p class="text-3xl font-semibold text-primary">Our recomendations</p>
+            <div class="w-auto h-80 mt-7 flex space-x-6 items-center overflow-x-auto overscroll-x-contain snap-x snap-mandatory scrollbar-hide">
+                <div class="recomended__card-container">
                     <div class="w-full h-3/5 rounded-t-lg bg-norway bg-cover"></div>
                     <section class="w-full h-2/5 bg-secondary">
                         <h3 class="pt-2.5 pl-2.5 pb-1.5 text-white font-bold">Norway</h3>
                         <p class="pl-2.5 text-white text-xs">Beatuful Landscapes</p>
                     </section>
                 </div>
-
-            </section>
-            <div id="trending-stay">
-
+                <div class="recomended__card-container">
+                    <div class="w-full h-3/5 rounded-t-lg bg-new_york bg-cover"></div>
+                    <section class="w-full h-2/5 bg-white">
+                        <h3 class="pt-2.5 pl-2.5 pb-1.5 text-terciary font-bold">New York</h3>
+                        <p class="pl-2.5 text-terciary text-xs">Concrete jungle</p>
+                    </section>
+                </div>
+                <div class="recomended__card-container">
+                    <div class="w-full h-3/5 rounded-t-lg bg-yosemite bg-cover"></div>
+                    <section class="w-full h-2/5 bg-secondary">
+                        <h3 class="pt-2.5 pl-2.5 pb-1.5 text-white font-bold">Yosemite</h3>
+                        <p class="pl-2.5 text-white text-xs">A break from the world</p>
+                    </section>
+                </div>
+                <div class="recomended__card-container">
+                    <div class="w-full h-3/5 rounded-t-lg bg-seattle bg-cover"></div>
+                    <section class="w-full h-2/5 bg-white">
+                        <h3 class="pt-2.5 pl-2.5 pb-1.5 text-terciary font-bold">Seattle</h3>
+                        <p class="pl-2.5 text-terciary text-xs">Big city</p>
+                    </section>
+                </div>
+                <div class="recomended__card-container">
+                    <div class="w-full h-3/5 rounded-t-lg bg-switzerland bg-cover"></div>
+                    <section class="w-full h-2/5 bg-secondary">
+                        <h3 class="pt-2.5 pl-2.5 pb-1.5 text-white font-bold">Switserland</h3>
+                        <p class="pl-2.5 text-white text-xs">Big city</p>
+                    </section>
+                </div>
             </div>
         </section>
+        <div id="trending-stay">
+        </div>
+        
     </main>
     <footer>
 
