@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .recomended_card-container {
+      @apply w-48 h-64 rounded-lg shadow-cardShadow;
+    }
+}
