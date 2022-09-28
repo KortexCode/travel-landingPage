@@ -1,9 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* Section de recomended */
 .recomended__card-container {
   @apply w-48 h-64 rounded-lg shadow-cardShadow flex-none transform transition-all hover:-translate-y-4 snap-center;
+}
+/* Section de Trending stays */
+.trending-stay__card-title{
+  @apply text-2xl font-extrabold text-white;
+}
+.trending-stay__card-description{
+  @apply text-lg font-medium text-white;
+}
+/* Section de FAQs */
+.FAQs-info{
+  @apply w-full h-auto;
+}
+.FAQs-info h3:nth-child(1){
+  @apply mb-1 text-lg font-semibold text-primary;
+}
+.FAQs-info p{
+  @apply text-base font-medium;
 }
 
 @layer components {
