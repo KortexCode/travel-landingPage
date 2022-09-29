@@ -37,6 +37,11 @@ module.exports = {
 			  'iceland': "url('../img/iceland.jpg')",
 			  
 			},
+      borderColor:{
+        'primary': '#CC2D4A',
+        'secondary': '#8FA206',
+        'tertiary': '#61AEC9',
+      },
       boxShadow:{
         shadowButton:"0px 2px 7px rgba(0 0 0 / 0.25)",
         cardShadow: "0px 1.63319px 1.63319px rgba(0 0 0 / 0.25)",
