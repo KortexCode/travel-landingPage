@@ -4,7 +4,8 @@
   "description": "A responsive website made with tailwind to consult places of travel. Made with the guide of the platzi workshop course.",
   "main": "index.js",
   "scripts": {
-    "tw:build": "tailwind -i ./src/css/tailwind.css -o ./public/css/tailwind.css --watch"
+    "tw:dev": "tailwind -i ./src/css/tailwind.css -o ./public/css/tailwind.css --watch",
+    "tw:build": "npx tailwindcss -i ./src/css/tailwind.css -o ./public/css/tailwind.css --minify"
   },
   "repository": {
     "type": "git",

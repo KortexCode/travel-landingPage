@@ -5,6 +5,18 @@
 .recomended__card-container {
   @apply w-48 h-64 rounded-lg shadow-cardShadow flex-none transform transition-all hover:-translate-y-4 snap-center;
 }
+.recomended__card-container:nth-child(odd) section{
+  @apply dark:bg-gray-700;
+}
+.recomended__card-container:nth-child(odd) section p{
+  @apply dark:text-terciary;
+}
+.recomended__card-container:nth-child(even) section{
+  @apply  dark:bg-gray-800;
+}
+.recomended__card-container:nth-child(even) h3{
+  @apply dark:text-white;
+}
 /* Section de Trending stays */
 .trending-stay__card-title{
   @apply text-2xl font-extrabold text-white;
